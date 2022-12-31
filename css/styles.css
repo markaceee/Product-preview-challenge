@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%)
+}
+
+.perfume{
+    margin: 0 auto;
+    max-width: 90rem;
+    margin-top: 10rem;
+}
+
+.perfume .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border-radius: 2rem;
+}
+
+.perfume .box-container .image{
+    flex: 1 1 40rem;
+}
+
+.perfume .box-container .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem 0 0 2rem;
+}
+
+
+.perfume .box-container .image .mobile-reso{
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem 2rem 0 0;
+}
+
+.perfume .box-container .box{
+    flex: 1 1 40rem;
+    padding: 7rem;
+}
+
+.perfume .box-container .box .title{
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .5rem;
+    font-size: 1.5rem;
+}
+
+.perfume .box-container .box h1{
+    font-family: 'Fraunces', sans-serif;
+    margin-top: 4rem;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.perfume .box-container .box .paragraph-box{
+    font-size: 2rem;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%); 
+    line-height: 1.5;
+    margin: 2rem 0;
+}
+
+.perfume .box-container .box .price1{
+    display: flex;
+    align-items: center;
+    font-family: 'Fraunces', sans-serif;
+    color: #3B856A;
+    font-size: 5rem;
+}
+
+.perfume .box-container .box .price1 span{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: hsl(228, 12%, 48%);
+    text-decoration-line: line-through;
+}
+
+.perfume .box-container .box button{
+    display: flex;
+    justify-content: center;
+    border-radius: 1rem;
+    margin: 2.5rem 0;
+    padding: 2rem;
+    background-color: #1A4031;
+    color: #fff;
+    width: 100%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    align-items: center;
+}
+
+.perfume .box-container .box button:hover{
+    background-color: #3B856A;
+    color: #fff;
+}
+
+.perfume .box-container .box button svg{
+    margin-right: 1rem;
+}
+
+.attribution{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+
+.attribution a{
+    color: #1A4031;
+    font-weight: bold;
+}
+
+
+
+@media (max-width: 1440px) {
+    html{
+        font-size: 50%;
+    }
+}
+
+
+@media (max-width: 720px) {
+    html{
+        font-size: 45%;
+    }
+    .perfume{
+        padding:0 5rem;
+    }
+}
+
+
+@media (max-width: 719px) {
+    html{
+        font-size: 40%;
+    }
+
+    .perfume .box-container .image img{
+        border-radius: 2rem 2rem 0 0;
+    }
+}
+
+@media (max-width: 356px) {
+    html{
+        font-size: 30%;
+    }
+
+    .perfume .box-container .box{
+       padding: 5rem;
+    }
+    
+}
+
+
